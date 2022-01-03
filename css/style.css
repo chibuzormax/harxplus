@@ -34,7 +34,7 @@ body {
     color: #1245A8;
     font-size: 1em;
     padding: 0 5px;
-    transition: 0.8s ease-out;
+    transition: 0.3s ease;
 }
 
 #myHeader li a i {
@@ -42,14 +42,17 @@ body {
 }
 
 #myHeader li a:hover {
-    font-size: 1.05em;
+    font-size: 1.025em;
+}
+#mySidenav, .navbtn {
+    display: none;
 }
 /** General styles for section one **/
 .section1 {
     background: rgba(18, 69, 168, 0.24);
     width: 95vw;
     margin: auto;
-    height: 500px;
+    height: 460px;
     border-radius: 15px;
     display: grid;
     grid-template-columns: 58% 42%;
@@ -61,6 +64,7 @@ body {
     margin: 100px 0 200px 100px;
     font-size: 1.8vw;
     text-transform: capitalize;
+    line-height: 2.5vw;
 }
 
 .text .b-text {
@@ -69,6 +73,7 @@ body {
     font-weight: 700;
     font-style: normal;
     margin: 0 0 15px 0;
+    line-height: 4vw;
 }
 
 .fade {
@@ -103,10 +108,11 @@ body {
 /** General styles for section two**/
 .section2 {
     margin: auto;
-    width: 60%;
+    width: 70%;
     text-align: center;
     font-weight: 500;
-    font-size: 1.5vw;
+    font-size: 1.1em;
+    line-height: 22px;
 }
 
 p em {
@@ -117,9 +123,9 @@ p em {
 .b-text2 {
     color: rgba(18, 69, 168, 1);
     font-weight: 600;
-    font-size: 30px;
+    font-size: 2.8vw;
     padding: 25px 0;
-    margin-bottom: 30px;
+    margin: 10px 0 0 30px;
 }
 .learn-l {
     margin: 40px 0;
@@ -130,7 +136,7 @@ p em {
     background-color: rgba(18, 69, 168, 0.8);
     padding: 5px 12px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 15px;
 }
 /** General styles for section three**/
 .section3 {
@@ -247,7 +253,7 @@ p.creedcolor {
 
 .lines .vl {
     border-right: 1.5px solid rgba(104, 104, 104, 0.5);
-    height: 16.8vh;
+    height: 88px;
     position: absolute;
     left: 50%;
 }
@@ -272,13 +278,14 @@ p.creedcolor {
     background-color: rgba(18, 69, 168, 0.8);
     padding: 5px 50px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 /** General styles for section six **/
 .section6 {
     display: grid;
     width: 85%;
+    position: relative;
     margin: auto;
     color: rgba(18, 69, 168, 1);
     font-size: 13px;
@@ -344,24 +351,45 @@ footer p a:nth-child(1) {
     color: rgba(29, 161, 242, 1);
 }
 /* Extra small devices (phones, 600px and down) */
-@media (max-width: 576px) {
+@media (max-width: 767px) {
     
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Small devices (portrait tablets and large phones, 600px and up)
 @media (min-width: 576px) and (max-width: 767px) {
 
-}
+} */
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
-
+    #myHeader ul li {
+        margin: 41.5px 4vw 0 0;
+        font-size: 0.8em;
+    }
+    .navBrand {
+        margin: 0 4vw;
+    }
+    .section1 {
+        height: 380px;
+    }
+    .section2, .section4 p {
+        font-size: 0.85em;
+    }
+    .section6 {
+        grid-template-columns: 50% 50%;
+    }
+    .contact {
+        display: none;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px) {
     #myHeader li a {
         font-size: 0.85em;
+    }
+    #myHeader li a:hover {
+        font-size: 0.9em;
     }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
