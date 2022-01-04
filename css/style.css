@@ -44,9 +44,11 @@ body {
 #myHeader li a:hover {
     font-size: 1.025em;
 }
-#mySidenav, .navbtn {
+
+.closebtn, .openbtn {
     display: none;
 }
+
 /** General styles for section one **/
 .section1 {
     background: rgba(18, 69, 168, 0.24);
@@ -242,20 +244,10 @@ p.creedcolor {
     margin-bottom: 10px;
 }
 
-.lines p:nth-child(3) {
-    transform: rotate(180deg);
+.lines p img {
+    height: 100px;
+    width: 12px;
     position: absolute;
-    left: 49.1%;
-    top: 90px;
-    font-size: 4vw;
-    color: rgba(104, 104, 104, 0.5);
-}
-
-.lines .vl {
-    border-right: 1.5px solid rgba(104, 104, 104, 0.5);
-    height: 88px;
-    position: absolute;
-    left: 50%;
 }
 
 .right {
@@ -352,7 +344,36 @@ footer p a:nth-child(1) {
 }
 /* Extra small devices (phones, 600px and down) */
 @media (max-width: 767px) {
-    
+    .sideNav {
+        width: 0;
+        position: fixed;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #becce9;
+        transition: 0.5s;
+        z-index: 1;
+    }
+    #mySideNav ul li {
+        margin: 20px;
+        float: none;
+    }
+    .closebtn, .openbtn {
+        display: block;
+    }
+    .openbtn {
+        font-size: 20px;
+        border: none;
+        z-index: 0;
+        position: absolute;
+        top: 41px;
+        left: 10px;
+    }
+    .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up)

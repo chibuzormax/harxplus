@@ -14,8 +14,9 @@
 </head>
 <body>
    <header id="myHeader">
-      <nav>
-        <div class="navBrand"><a href="index.html"><img src="images\logo\harxplus-logo.png" alt="brand logo" width="110px" height="110px"></a></div>
+    <div class="navBrand"><a href="index.html"><img src="images\logo\harxplus-logo.png" alt="brand logo" width="110px" height="110px"></a></div>
+    <nav id="mySideNav" class="sideNav">    
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <ul>
             <li><a href="#">About us</a></li>
             <li><a href="#">Our services</a></li>
@@ -23,6 +24,7 @@
             <li><a href="#">Pricing<i class="fas fa-angle-down"></i></a></li>
             <li><a href="#">Contact us<i class="fas fa-angle-down"></i></a></li>
         </ul>
+        <button class="openbtn" onclick="openNav()">☰</button>
       </nav>
     </header>
    <section>
@@ -96,8 +98,7 @@
            </div>
            <div class="lines">
                <p class="hl"></p>
-               <p class="vl"></p>
-               <p>&#8248;</p>
+               <p><img src="images\Arrow 1.png" alt=""></p>
            </div>
            <div class="left">
                <p class="f-creed creedcolor">Fun</p>
