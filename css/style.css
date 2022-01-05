@@ -436,6 +436,10 @@ footer p a:nth-child(1) {
         font-size: 16px;
     }
 
+    .section5 {
+        width: 95%;
+    }
+
     .right p, .left p {
         font-size: 0.8em;
     }
