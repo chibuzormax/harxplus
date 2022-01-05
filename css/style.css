@@ -438,10 +438,11 @@ footer p a:nth-child(1) {
 
     .section5 {
         width: 95%;
+        grid-column-gap: 20px;
     }
 
     .right p, .left p {
-        font-size: 0.8em;
+        font-size: 0.75em;
     }
 
     .request {
