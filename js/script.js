@@ -33,3 +33,13 @@ function showClientSlides(n) {
   }
   slides[clientSlideIndex-1].style.display = "grid";
 }
+
+// Nav Function
+function myFunction() {
+  let x = document.getElementById("myTopNav");
+  if (x.className === "topNav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topNav";
+  }
+}
