@@ -436,9 +436,9 @@ footer p a:nth-child(1) {
         font-size: 16px;
     }
 
-    .section5 {
+    .section5, .oCreed {
         width: 95%;
-        grid-column-gap: 20px;
+        grid-column-gap: 15px;
     }
 
     .right p, .left p {
