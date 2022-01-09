@@ -131,7 +131,7 @@ p em {
 .b-text2 {
     color: rgba(18, 69, 168, 1);
     font-weight: 600;
-    font-size: 2.8vw;
+    font-size: 2.6vw;
     padding: 25px 0;
     margin: 10px 0 0 30px;
 }
@@ -348,6 +348,145 @@ footer p a:nth-child(3) {
 footer p a:nth-child(1) {
     color: rgba(29, 161, 242, 1);
 }
+
+/* General styles for About Us Page */
+.section-ab-1 {
+    height: 150px;
+    border-radius: 20px;
+    width: 85%;
+    margin: 0 auto 100px;
+    background: rgba(18, 69, 168, 0.06);
+}
+
+.section-ab-1 p {
+    margin: auto 5%;
+}
+
+.about {
+    width: 70%;
+    margin: 0 auto 70px;
+    line-height: 20px;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.section-ab-2 {
+    width: 75%;
+    margin: 0 auto 50px;
+}
+
+.section-ab-2 p {
+    margin: 0;
+}
+
+.section-ab-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 80%;
+    margin: auto;
+    place-items: center;
+}
+
+.section-ab-3 p, .section-ab-4 .author {
+    font-weight: 600;
+}
+
+.section-ab-3 .light {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.section-ab-3 img {
+    width: 200px;
+    height: 200px;
+}
+
+.few {
+    margin: 20px 0 80px;
+    text-align: right;
+    width: 90%;
+    color: #1245A8;
+    font-weight: 500;
+}
+
+.section-ab-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 75%;
+    margin: auto;
+    grid-column-gap: 50px;
+    text-align: justify;
+    font-size: 14px;
+}
+
+.section-ab-4 .author {
+    margin-top: 30px;
+}
+
+.section-ab-5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 97%;
+    height: 150px;
+    margin: auto;
+    place-items: center;
+    font-size: 12px;
+    grid-column-gap: 20px;
+    place-content: center;
+}
+
+.section-ab-5 div {
+    background-color: rgba(255, 128, 0, 0.16);
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.section-ab-5 p {
+    text-align: center;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+.section-ab-5 p:nth-child(1) {
+    font-weight: 600;
+}
+
+/* General styles for our services page */
+.section-os-1 {
+    display: grid;
+    width: 70%;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 15vw;
+    margin-bottom: 50px;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+.head-s {
+    font-weight: 600;
+    color: #1245A8;
+    margin: 15px 0;
+    font-size: 1.6vw;
+}
+
+.section-os-2 {
+    margin: auto;
+    position: relative;
+    width: 40%;
+    font-size: 1.2vw;
+}
+
+.section-os-2-bg {
+    background: rgba(29, 242, 63, 0.1);
+    position: absolute;
+    border-radius: 50%;
+    width: 100%;
+    height: 400px;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media (max-width: 767px) {
     nav ul li:not(:last-child) {
@@ -479,8 +618,33 @@ footer p a:nth-child(1) {
         grid-template-rows: 40px 40px 40px 40px;
     }
 
-}
+    .section-ab-2, .few, .section-ab-3 p {
+        text-align: center;
+        width: 100%;
+    }
 
+    .section-ab-3 {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-row-gap: 10px;
+    }
+
+    .section-ab-4 {
+        grid-template-columns: 100%;
+    }
+
+    .section-ab-4 .author {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .section-ab-5 {
+        height: 1000px;
+        width: 70%;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -502,7 +666,24 @@ footer p a:nth-child(1) {
         grid-template-rows: 1fr 1fr;
         
     }
-
+    .section-ab-2, .few {
+        text-align: center;
+        width: 100%;
+    }
+    .section-ab-3 {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-row-gap: 10px;
+    }
+    .section-ab-3 img {
+        width: 160px;
+        height: 160px;
+    }
+    .section-ab-5 {
+        width: 98%;
+        font-size: 10px;
+        grid-column-gap: 10px;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -512,6 +693,10 @@ footer p a:nth-child(1) {
     }
     #myHeader li a:hover {
         font-size: 0.9em;
+    }
+    .section-ab-3 img {
+        width: 160px;
+        height: 160px;
     }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
