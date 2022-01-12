@@ -128,6 +128,7 @@ p em {
     color: #FF8000;
 }
 
+
 .b-text2 {
     color: rgba(18, 69, 168, 1);
     font-weight: 600;
@@ -553,10 +554,11 @@ footer p a:nth-child(1) {
     #myHeader .topNav.responsive li:not(:last-child) {
         position: relative;
         top: 100px;
-        padding: 0 0 8px;
+        padding: 0 0 10px;
         z-index: 1;
         transition: 0.5s;
         background: rgb(223, 236, 241);
+        font-size: 0.8em;
     }
 
 
@@ -692,6 +694,10 @@ footer p a:nth-child(1) {
 
     .head-s {
         font-size: 1.5em;
+    }
+
+    .section-ab-1 em {
+        font-size: 2vw;
     }
 }
 
