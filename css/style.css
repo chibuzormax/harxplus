@@ -516,12 +516,16 @@ footer p a:nth-child(1) {
         display: none;
     }
 
+    .navBrand {
+        margin: 0 4%;
+    }
+
     h1 {
         display: block;
         position: absolute;
         top: 30px;
-        left: 40%;
-        font-size: 7vw;
+        left: 35%;
+        font-size: 6.5vw;
     }
 
     #myHeader nav ul li a.icon {
@@ -554,6 +558,7 @@ footer p a:nth-child(1) {
         transition: 0.5s;
         background: rgb(223, 236, 241);
     }
+
 
     .section1 {
         grid-template-columns: 100%;
