@@ -647,6 +647,10 @@ footer p a:nth-child(1) {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 40px 40px 40px 40px;
     }
+    
+    .about {
+        width: 80%;
+    }
 
     .section-ab-2, .few, .section-ab-3 p {
         text-align: center;
