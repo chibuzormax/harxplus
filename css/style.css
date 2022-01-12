@@ -684,13 +684,10 @@ footer p a:nth-child(1) {
         font-size: 0.8em;
     }
 
-    .section-os-2 .item {
-        left: 8%;
-    }
-
     .section-os-2-bg {
         width: 90%;
         height: 90%;
+        transform: translate(5%);
     }
 
     .head-s {
