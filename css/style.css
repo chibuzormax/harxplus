@@ -668,14 +668,28 @@ footer p a:nth-child(1) {
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     }
 
-    .section-os-1, .section-os-2 {
+    .section-os-1 {
         grid-template-columns: 100%;
         grid-template-rows: 50% 50%;
         grid-row-gap: 50px;
+        font-size: 0.8em;
     }
 
-    .head-s, .section-os-1, .section-os-2 {
-        font-size: 1em;
+    .section-os-2 {
+        font-size: 0.8em;
+    }
+
+    .section-os-2 .item {
+        left: 8%;
+    }
+
+    .section-os-2-bg {
+        width: 90%;
+        height: 90%;
+    }
+
+    .head-s {
+        font-size: 1.5em;
     }
 }
 
